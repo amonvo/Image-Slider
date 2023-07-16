@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image slider</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <div class="container">
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="img/clock-g7ef594fbc_1280.jpg" alt="clock"></div>
+                <div class="swiper-slide"><img src="img/fantasy-g0d6d36405_1280.jpg" alt="fantasy"></div>
+                <div class="swiper-slide"><img src="img/fantasy-g1cfdbef1d_1280.jpg" alt="fantasy"></div>
+                <div class="swiper-slide"><img src="img/fantasy-g2a52c3cd8_1280.jpg" alt="fantasy"></div>
+                <div class="swiper-slide"><img src="img/fantasy-g65bf84cea_1280.jpg" alt="fantasy"></div>
+                <div class="swiper-slide"><img src="img/fantasy-g774214a6d_1280.jpg" alt="fantasy"></div>
+                <div class="swiper-slide"><img src="img/library-g4e7c029df_1280.jpg" alt="fantasy"></div>
+                <div class="swiper-slide"><img src="img/ship-g434939c1c_1280.jpg" alt="ship"></div>
+                <div class="swiper-slide"><img src="img/treehouse-gad8857426_1280.jpg" alt="treehouse"></div>
+                <div class="swiper-slide"><img src="img/villa-g25b605dcc_1280.jpg" alt="villa"></div>
+
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+
+</html>
